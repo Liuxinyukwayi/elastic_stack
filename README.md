@@ -21,7 +21,7 @@
 
 docker-compose up -d
 
-##📌 日志处理流程
+📌 日志处理流程
 
 Nginx --> Filebeat --> Kafka --> Logstash --> Elasticsearch --> Kibana
 Nginx 产生日志
