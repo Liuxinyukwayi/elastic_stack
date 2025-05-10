@@ -1,4 +1,4 @@
-日志分析系统（基于 ELK + Kafka）
+# Nginx 日志分析系统（基于 ELK + Kafka）
 
 本项目实现了一个完整的日志收集与分析系统，使用 ELK Stack、Kafka 及 Filebeat 从 Nginx 实时采集 Access 和 Error 日志，最终在 Kibana 中进行可视化分析。
 
@@ -15,7 +15,14 @@
 
 ---
 
-项目流程;
+## 🚀 启动方式
+
+请确保安装了 Docker 和 Docker Compose，然后运行：
+
+```bash
+docker-compose up -d
+📌 日志处理流程
+
 Nginx --> Filebeat --> Kafka --> Logstash --> Elasticsearch --> Kibana
 Nginx 产生日志
 
@@ -24,6 +31,3 @@ Filebeat 读取 access.log 与 error.log，发送到 Kafka topic（如 nginx-acc
 Logstash 消费 Kafka topic 并将数据结构化后发送到 Elasticsearch
 
 Kibana 查询和展示日志信息
-
-运行方式
-下载项目 确定安装docker，在目录运行docker compose up -d 启动项目
