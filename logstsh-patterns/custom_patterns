@@ -1,0 +1,1 @@
+CUSTOM_LOG %{IP:client_ip} - %{USER:ident} \[%{HTTPDATE:timestamp}\] "%{WORD:method} %{URIPATHPARAM:request} HTTP/%{NUMBER:http_version}" %{NUMBER:status} %{NUMBER:bytes} "%{URI:referrer}" "%{DATA:user_agent}"
