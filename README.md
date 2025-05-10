@@ -19,9 +19,9 @@
 
 请确保安装了 Docker 和 Docker Compose，然后运行：
 
-```bash
 docker-compose up -d
-📌 日志处理流程
+
+##📌 日志处理流程
 
 Nginx --> Filebeat --> Kafka --> Logstash --> Elasticsearch --> Kibana
 Nginx 产生日志
